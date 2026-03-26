@@ -1,6 +1,6 @@
 // src/App.js
 import React from 'react';
-import IdCard from './IdCard'; // Make sure you choose class or functional based on your VIT register number!
+import IdCard from './IdCard';
 
 function App() {
   return (
@@ -8,24 +8,24 @@ function App() {
       <h2>Task 2: Identity Components</h2>
       
       <IdCard
-  lastName='Doe'
-  firstName='John'
-  gender='male'
-  height={1.78}
-  birth={new Date("1992-07-14")}
-  // ✅ This adds the "/Identity-Card" prefix automatically
-  picture={process.env.PUBLIC_URL + "/boy.jpg"} 
-/>
+        lastName='Doe'
+        firstName='John'
+        gender='male'
+        height={1.78}
+        birth={new Date("1992-07-14")}
+        // ✅ Use process.env.PUBLIC_URL to find images in the public folder
+        picture={process.env.PUBLIC_URL + "/boy.jpg"} 
+      />
 
-<IdCard
-  lastName='Delores'
-  firstName='Obrien'
-  gender='female'
-  height={1.72}
-  birth={new Date("1993-05-11")}
-  // ✅ Same here for the girl image
-  picture={process.env.PUBLIC_URL + "/girl.jpg"}
-/>
+      <IdCard
+        lastName='Delores'
+        firstName='Obrien'
+        gender='female'
+        height={1.72}
+        birth={new Date("1993-05-11")}
+        // ✅ Use process.env.PUBLIC_URL here too
+        picture={process.env.PUBLIC_URL + "/girl.jpg"}
+      />
     </div>
   );
 }
