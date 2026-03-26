@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import IdCard from './IdCard'; // Make sure you choose class or functional based on your VIT register number!
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '20px' }}>
+      <h2>Task 2: Identity Components</h2>
+      
+      <IdCard
+        lastName='Doe'
+        firstName='John'
+        gender='male'
+        height={1.78}
+        birth={new Date("1992-07-14")}
+        // Just use the file name with a slash!
+        picture="/boy.jpg" 
+      />
+
+      <IdCard
+        lastName='Delores'
+        firstName='Obrien'
+        gender='female'
+        height={1.72}
+        birth={new Date("1993-05-11")}
+        // Just use the file name with a slash!
+        picture="/girl.jpg"
+      />
     </div>
   );
 }

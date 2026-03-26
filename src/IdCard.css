@@ -1,0 +1,88 @@
+/* src/IdCard.css */
+
+/* Main container for the cards */
+.id-card {
+  display: flex;
+  width: 450px;
+  margin: 25px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Vibrant Gradient Accent Bar on the left */
+.id-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 100%;
+  background: linear-gradient(180deg, #ff0844 0%, #ffb199 100%); /* Vibrant Sunset Gradient */
+}
+
+/* Give the second card a different color scheme using an nth-child selector */
+.id-card:nth-of-type(2)::before {
+  background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%); /* Vibrant Ocean Gradient */
+}
+
+/* Smooth hover animation */
+.id-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Modern circular profile picture with a border */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 25px;
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Slight zoom on the picture when hovering over the card */
+.id-card:hover .profile-pic {
+  transform: scale(1.05);
+}
+
+/* Text styling */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-container p {
+  margin: 6px 0;
+  font-size: 16px;
+  color: #444;
+  letter-spacing: 0.5px;
+}
+
+/* Colored bold text for the labels */
+.info-container strong {
+  color: #2c3e50;
+  font-weight: 700;
+  margin-right: 8px;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Make the names pop a bit more */
+.info-container p:nth-child(1),
+.info-container p:nth-child(2) {
+  font-size: 18px;
+  color: #111;
+}

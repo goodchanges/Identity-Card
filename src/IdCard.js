@@ -1,0 +1,25 @@
+// src/IdCard.js
+import React, { Component } from 'react';
+import './IdCard.css'; // Importing the mandatory CSS
+
+class IdCard extends Component {
+  render() {
+    // Destructuring props from this.props
+    const { firstName, lastName, gender, height, birth, picture } = this.props;
+
+    return (
+      <div className="id-card">
+        <img src={picture} alt={`${firstName} ${lastName}`} className="profile-pic" />
+        <div className="info-container">
+          <p><strong>First name:</strong> {firstName}</p>
+          <p><strong>Last name:</strong> {lastName}</p>
+          <p><strong>Gender:</strong> {gender}</p>
+          <p><strong>Height:</strong> {height}m</p>
+          <p><strong>Birth:</strong> {birth.toDateString()}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default IdCard;
