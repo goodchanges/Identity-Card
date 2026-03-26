@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Identity-Card/static/css/main.f4189737.css",
-    "main.js": "/Identity-Card/static/js/main.d49b426a.js",
+    "main.js": "/Identity-Card/static/js/main.53ee880c.js",
     "static/js/453.1a330d25.chunk.js": "/Identity-Card/static/js/453.1a330d25.chunk.js",
     "index.html": "/Identity-Card/index.html",
     "main.f4189737.css.map": "/Identity-Card/static/css/main.f4189737.css.map",
-    "main.d49b426a.js.map": "/Identity-Card/static/js/main.d49b426a.js.map",
+    "main.53ee880c.js.map": "/Identity-Card/static/js/main.53ee880c.js.map",
     "453.1a330d25.chunk.js.map": "/Identity-Card/static/js/453.1a330d25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4189737.css",
-    "static/js/main.d49b426a.js"
+    "static/js/main.53ee880c.js"
   ]
 }
